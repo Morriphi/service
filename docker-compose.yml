@@ -1,0 +1,18 @@
+web:
+  build: web/
+  ports:
+    - "3000:80"
+  links:
+    - api
+  volumes:
+    - ./web:/app
+
+api:
+  build: api/
+  volumes:
+    - ./api:/app
+  links:
+    - redis
+
+redis:
+  image: redis

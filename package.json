@@ -1,0 +1,14 @@
+{
+  "name": "service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "web/index.js",
+  "scripts": {
+    "clean": "docker-compose kill && docker-compose rm",
+    "start": "docker-compose build && docker-compose up"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {}
+}
